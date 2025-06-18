@@ -122,6 +122,7 @@ DEPENDENCIES
   bundler!
   prettier_print!
   ripper-tags!
+  rubocop!
   solargraph!
   syntax_tree!
   syntax_tree-haml!
