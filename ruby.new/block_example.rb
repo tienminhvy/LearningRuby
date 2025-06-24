@@ -8,3 +8,10 @@ def call_block
 end
 
 call_block { puts 'nothing' }
+
+def who_says_that
+  yield('Lorem', 'ipsum')
+  yield('Dolor', 'amet')
+end
+
+who_says_that { |person, phrase| puts "#{person} says #{phrase}" }
