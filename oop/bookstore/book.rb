@@ -10,6 +10,16 @@ class BookInStore
   def to_s
     "isbn: #{@isbn}, price: #{@price}"
   end
+
+  # def isbn
+  #   @isbn
+  # end
+  #
+  # def price
+  #   @price
+  # end
+
+  attr_reader :isbn, :price
 end
 
 a_book = BookInStore.new('x', 3)
