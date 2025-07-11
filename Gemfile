@@ -2,6 +2,7 @@ source 'https://rubygems.org/' do
   ruby '3.4.3'
   group :development do
     gem 'bundler'
+    gem 'minitest'
     gem 'prettier_print'
     gem 'ripper-tags'
     gem 'rubocop'
