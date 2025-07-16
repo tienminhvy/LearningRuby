@@ -18,3 +18,7 @@ puts blc.class
 
 puts blc.call(1412)
 puts blc.call('cat')
+
+blc = ->(name) { puts "Hi #{name}" }
+
+blc.call('John Doe')
