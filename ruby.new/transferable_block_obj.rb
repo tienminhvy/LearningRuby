@@ -14,3 +14,4 @@ blc = get_block_as_callback { |name| "My name is #{name}" }
 
 # Need to use call method because passing block as variable does not recornized as a function
 puts blc.call('Nothing')
+puts blc.class
