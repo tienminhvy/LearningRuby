@@ -19,6 +19,12 @@ puts blc.class
 puts blc.call(1412)
 puts blc.call('cat')
 
+# new syntax of lambda fn
 blc = ->(name) { puts "Hi #{name}" }
 
 blc.call('John Doe')
+
+# traditional syntax
+blc = lambda { |name| puts "Something wrong, #{name}, let's fix it!" }
+
+blc.call('Doe')
