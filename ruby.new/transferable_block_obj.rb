@@ -28,3 +28,8 @@ blc.call('John Doe')
 blc = lambda { |name| puts "Something wrong, #{name}, let's fix it!" }
 
 blc.call('Doe')
+
+# proc syntax
+blc = proc { |name| puts "Hey, #{name}, let's fix it!" }
+
+blc.call('Ipsum')
