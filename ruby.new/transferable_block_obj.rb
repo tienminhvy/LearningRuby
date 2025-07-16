@@ -33,3 +33,7 @@ blc.call('Doe')
 blc = proc { |name| puts "Hey, #{name}, let's fix it!" }
 
 blc.call('Ipsum')
+
+# Using Proc.new
+blc = Proc.new { puts 'This is a block of code ' }
+blc.call
