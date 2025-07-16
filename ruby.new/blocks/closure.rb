@@ -10,3 +10,25 @@ p p1.call(9)
 
 p2 = n_times('clinché ')
 puts p2.call(10)
+
+def power_callback_generator
+  value = 1
+  -> { value += value }
+end
+
+call_back = power_callback_generator
+
+p call_back.call
+p call_back.call
+p call_back.call
+p call_back.call
+
+p call_back.call
+p call_back.call
+p call_back.call
+p call_back.call
+
+p call_back.call
+p call_back.call
+p call_back.call
+p call_back.call
