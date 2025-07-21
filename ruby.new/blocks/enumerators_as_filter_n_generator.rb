@@ -30,4 +30,13 @@ class InfiniteStream
   end
 end
 
-p InfiniteStream.new.all.first(100)
+def palindrome?(num)
+  num = num.to_s
+  num == num.reverse
+end
+
+p InfiniteStream.new
+                .all
+                .select { (_1 % 3).zero? }
+                .select { palindrome?(_1) }
+                .first(100)
