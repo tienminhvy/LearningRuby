@@ -31,3 +31,10 @@ p long_enum
 loop do
   puts "#{short_enum.next} - #{long_enum.next}"
 end
+
+# method chaining with enum
+
+results = []
+'hello world!'.each_char.with_index { |item, index| results << [item, index] }
+
+p results
