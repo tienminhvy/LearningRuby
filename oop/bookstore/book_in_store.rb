@@ -30,6 +30,7 @@ class BookInStore
     (price * 100).round
   end
 
+  # setter
   def price_in_cents=(cents)
     @price = cents / 100.0
   end
