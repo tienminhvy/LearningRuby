@@ -38,3 +38,11 @@ results = []
 'hello world!'.each_char.with_index { |item, index| results << [item, index] }
 
 p results
+
+map_of_string = 'lorem ipsum'.each_char.with_index.map { |item, index| [item, index] }
+
+puts 'Map of string:'
+p map_of_string
+
+enum_in_threes = (1..15).enum_for(:each_slice, 3)
+p enum_in_threes.to_a
